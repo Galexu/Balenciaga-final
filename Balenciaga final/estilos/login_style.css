@@ -1,0 +1,162 @@
+.header_login {
+  height: 45px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: 'menu menu menu';
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.h1falso {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 19px;
+  margin-top: -13em;
+  letter-spacing: 1.5px;
+  font-stretch: expanded;
+}
+
+.div_principal_login {
+  display: grid;
+  grid-template-columns: 0.8fr 1.5fr 0.8fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    'izq med der'
+    'izq med der'
+    'izq med der';
+  height: 40em;
+}
+
+.div_login_izq {
+  grid-area: izq;
+  border-right: 1px solid black;
+}
+
+.div_login_med {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: med;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1.375rem;
+  text-align: center;
+  letter-spacing: 1px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "top"
+    "med";
+}
+
+.div_login_der {
+  grid-area: der;
+  border-left: 1px solid black;
+}
+
+.div_logeo {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+#input_correo {
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 600px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+#input_password {
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 600px;
+  transition: all 0.3s ease-in-out;
+}
+
+#input_correo:focus {
+  outline: none;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  opacity: 0.7;
+}
+
+#input_password:focus {
+  outline: none;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  opacity: 0.7;
+}
+
+.top {
+  grid-area: top;
+}
+
+.texto_form {
+  text-align: left;
+  font-family: Helvetica;
+  font-size: .75rem;
+  color: #767676;
+  margin-right: 400px;
+}
+
+#siguiente_form {
+  width: 600px;
+  border: 1px solid black;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  font-family: Helvetica;
+  font-size: .75rem;
+  color: rgb(255, 255, 255);
+  height: 35px;
+  text-transform: uppercase;
+  background: rgb(0, 0, 0);
+}
+
+#siguiente_form:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+}
+
+.recordarme {
+  font-family: Helvetica;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  margin-right: 475px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.link_contra {
+  text-decoration: none;
+}
+
+.link_contra:hover {
+  text-decoration: underline 0.5px black;
+}
+
+.perfil a {
+  font-size: 12px;
+  margin-top: 30px;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  color: black;
+}
+
+.perfil:hover a {
+  color: grey;
+}
